@@ -1,0 +1,124 @@
+body {
+  background-color: #1E1E26;
+  color: white;
+  font-family: Montserrat, Yantramanav, Open Sans;
+}
+
+.mf-headings {
+  font-family: Yantramanav, Montserrat, Open Sans;
+  font-weight: 600;
+  font-size: 55px;
+  letter-spacing: 1px;
+}
+
+#logo {
+  padding-left: 130px;
+  padding-top: 80px;
+}
+
+.mf-descriptor-section-1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: 300px;
+  margin-top: 55px;
+}
+
+.mf-beta-form {
+  margin-bottom: 45px;
+}
+
+.mf-section-1-details {
+  font-weight: 600;
+  font-size: 21px;
+  justify-content: center;
+}
+
+.yellowtext {
+  color: #ffc107;
+}
+
+.title {
+  font-family: Yantramanav, Open Sans;
+  font-weight: 600;
+  font-size: 68px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-right: 17%;
+  margin-left: 17%;
+}
+
+.email-form {
+  margin: 8px;
+  margin: 40px;
+  font-weight: normal;
+  background-color: transparent;
+}
+
+#fname, #email {
+  background-color: transparent;
+  border-style: solid;
+  border-bottom: 1.2px solid rgb(223, 223, 223);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-right: 20px;
+}
+
+.section-1-button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.separator {
+  padding-top: 20px;
+}
+
+.mf-section-2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 85px;
+  background-color: white;
+  color: black;
+}
+
+.mf-descriptor-left {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: 300px;
+  margin-top: 55px;
+}
+
+.mf-section-2-right {
+  font-family: montserrat, sans-serif;
+  margin-left: 50px;
+}
+
+.mf-section-2-top {
+  margin-bottom: 50px;
+}
+
+.mf-section-bottom {
+
+}
+
+button, input {
+  color: white;
+}
+
+button {
+  border-radius: 0px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+
+iframe {
+  visibility: initial;
+  border-radius: 0%;
+}
+
+.mf-footer {
+  font-family: Verdana, sans-serif;
+  background-color: #1E1E26;
+}
