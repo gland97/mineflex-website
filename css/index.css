@@ -7,30 +7,39 @@ body {
 .mf-headings {
   font-family: Yantramanav, Montserrat, Open Sans;
   font-weight: 600;
-  font-size: 55px;
-  letter-spacing: 1px;
+  font-size: 38px;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+.mf-subheadings {
+  font-family: Yantramanav, Montserrat, Open Sans;
+  font-weight: 600;
+  padding-top: 20px;
 }
 
 #logo {
-  padding-left: 130px;
-  padding-top: 80px;
+  padding-left: 50px;
+  padding-top: 50px;
 }
 
 .mf-descriptor-section-1 {
   font-family: Montserrat, sans-serif;
   font-size: 15px;
   font-weight: 300px;
-  margin-top: 55px;
+  margin-top: 35px;
 }
 
 .mf-beta-form {
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 }
 
 .mf-section-1-details {
-  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  font-weight: lighter;
   font-size: 21px;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .yellowtext {
@@ -43,7 +52,7 @@ body {
   font-size: 68px;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   margin-right: 17%;
   margin-left: 17%;
 }
@@ -78,19 +87,53 @@ body {
   padding-top: 20px;
 }
 
-.mf-section-2 {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 85px;
+.mf-section-2-top {
   background-color: white;
   color: black;
+  text-align: center;
+  padding-right: 15rem;
+  padding-left: 15rem;
+  padding-top: 4rem;
+}
+
+.mf-section-2-bottom {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding-right: 15rem;
+  padding-left: 15rem;
+  padding-bottom: 4rem;
+}
+
+.mf-section-2-column-left {
+  padding-right: 7.1rem;
+}
+
+.mf-section-2-column-right {
+  padding-left: 9.5rem;
+}
+
+.mf-top-descriptor-padding {
+  padding-right: 20rem;
+  padding-left: 20rem;
+  margin-bottom: 5rem;
+  font-size: 19px;
 }
 
 .mf-descriptor-left {
   font-family: Montserrat, sans-serif;
-  font-size: 15px;
-  font-weight: 300px;
-  margin-top: 55px;
+    font-size: 15px;
+    font-weight: 300px;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.mf-descriptor-right {
+  font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-weight: 300px;
+    text-align: left;
+    padding-bottom: 1.5rem;
 }
 
 .mf-section-2-right {
@@ -98,12 +141,16 @@ body {
   margin-left: 50px;
 }
 
-.mf-section-2-top {
-  margin-bottom: 50px;
+.mf-subheadings-img {
+  margin-right: 12px;
+  width: 70;
+  height: auto;
 }
 
-.mf-section-bottom {
-
+.mf-reg-process-img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 button, input {
@@ -113,9 +160,10 @@ button, input {
 button {
   border-radius: 0px;
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: montserrat, sans-serif;
   font-weight: 600;
 }
+
 
 iframe {
   visibility: initial;
@@ -125,4 +173,10 @@ iframe {
 .mf-footer {
   font-family: Verdana, sans-serif;
   background-color: #1E1E26;
+}
+
+.mf-beta-form-footer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: black;
 }
