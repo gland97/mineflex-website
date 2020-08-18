@@ -42,7 +42,10 @@
           <input type="text" placeholder="EMAIL" id="email" name="lname">
         </div>
         <div class="col-auto justify-content-center">
-          <button type="button" class="btn btn-warning section-1-button">Join Beta</button>
+          <button id="beta-button" type="button" class="btn btn-warning section-1-button">Join Beta</button>
+        </div>
+        <div class="col-12 justify-content-center" style="text-align: center; display: none;">
+          <h5 id="join-status" style="color: red;"></h5>
         </div>
       </div>
     </div>
@@ -121,9 +124,6 @@
       </div>
     </div>
   </div>
-  </div>
-  </div>
-  </div>
 
 
   <footer class="page-footer font-small pt-4 mf-footer">
@@ -140,5 +140,53 @@
 
 
 </body>
+<script>
+  document.getElementById("beta-button").onclick = function (e) {
+    const email = document.getElementById("fname").value
+    const fname = document.getElementById("email").value
+    const status = document.getElementById("join-status")
+    status.parentElement.style.display = 'none'
+
+
+    if (email.length === 0 || fname.length === 0) {
+      document.getElementById("join-status").innerHTML = "Please Enter your Email and First Name"
+    } else {
+      fetch('http://localhost:4000/email/beta/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          first_name: fname,
+          last_name: '',
+          custom_fields: {
+            w1_T: '',
+            w2_T: '',
+            w3_T: '',
+          }
+        })
+      })
+      .then(res => {
+        if (res.status === 200) {
+          status.parentElement.style.display = 'block'
+          status.style.color = 'green'
+          status.innerHTML = "You have succesfully Joined the Beta. Please check your email for a beta code!"
+        } else {
+          return res.json().then(body => {
+            status.parentElement.style.display = 'block'
+            status.style.color = 'red'
+            status.innerHTML = body.error
+          })
+        }
+      })
+      .catch(err => {
+        status.parentElement.style.display = 'block'
+        status.style.color = 'red'
+        status.innerHTML = 'Unable to Complete Beta Signup!'
+      })
+    }
+  }
+</script>
 
 </html>
