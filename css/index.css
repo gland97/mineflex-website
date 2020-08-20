@@ -15,7 +15,7 @@ body {
 .mf-subheadings {
   font-family: Yantramanav, Montserrat, Open Sans;
   font-weight: 600;
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 #logo {
@@ -171,4 +171,20 @@ iframe {
   margin-top: 60px;
   margin-bottom: 60px;
   color: black;
+}
+
+.mf-text-bg {
+  position: absolute;
+  background-color: #ffc107;
+  width: 150px;
+  height: 20px;
+  top: 30px;
+  opacity: 0.7;
+  left: 90px;
+  z-index: -1;
+  transform: rotate(-3deg);
+}
+
+.mf-high-z {
+  z-index: 5;
 }
