@@ -88,12 +88,14 @@ body {
   padding-top: 20px;
 }
 
+.mf-cont-section-2 {
+  background-color: white;
+}
+
 .mf-section-2-top {
   background-color: white;
   color: black;
   text-align: center;
-  padding-right: 15rem;
-  padding-left: 15rem;
   padding-top: 4rem;
 }
 
@@ -101,22 +103,11 @@ body {
   background-color: white;
   color: black;
   text-align: center;
-  padding-right: 15rem;
-  padding-left: 15rem;
   padding-bottom: 4rem;
 }
 
-.mf-section-2-column-left {
-  padding-right: 7.1rem;
-}
-
-.mf-section-2-column-right {
-  padding-left: 9.5rem;
-}
 
 .mf-top-descriptor-padding {
-  padding-right: 20rem;
-  padding-left: 20rem;
   margin-bottom: 5rem;
   font-size: 19px;
 }
