@@ -1,5 +1,5 @@
 body {
-  background-color: #1E1E26;
+  background: linear-gradient(90deg, rgba(30,30,38,1) 0%, rgba(30,30,38,1) 43%, rgb(53, 53, 68) 100%);
   color: white;
   font-family: Montserrat, Yantramanav, Open Sans;
 }
@@ -16,11 +16,16 @@ body {
   font-family: Yantramanav, Montserrat, Open Sans;
   font-weight: 600;
   padding-top: 18px;
+  z-index: 1;
+  padding-left: 0.4em;
 }
 
-#logo {
+.logo {
   padding-left: 50px;
   padding-top: 50px;
+  font-family: Alegreya Sans SC;
+  font-size: 1.7em;
+
 }
 
 .mf-descriptor-section-1 {
@@ -39,11 +44,23 @@ body {
   font-weight: lighter;
   font-size: 21px;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 1.5rem;
+}
+
+.section-1-button {
+  color: #c5ff2a;
 }
 
 .yellowtext {
-  color: #ffc107;
+  color: #c5ff2a;
+}
+
+.mf-button-change {
+  background-color: #c5ff2a;
+  border-color:#c5ff2a;
+  min-width: max-content;
+  font-family: Yantramanav, Open sans-serif;
+  text-transform: uppercase;
 }
 
 .title {
@@ -84,31 +101,44 @@ body {
   min-width: 125px;
 }
 
+.section-1-arrow {
+  margin-bottom: 3rem;
+}
+
 .separator {
   padding-top: 20px;
 }
 
-.mf-cont-section-2 {
-  background-color: white;
+.mf-red {
+  width:100%;
+  height:auto;
+  padding:0;
+  margin:0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position:relative;
 }
 
+
 .mf-section-2-top {
-  background-color: white;
   color: black;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 6.5rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
 }
 
 .mf-section-2-bottom {
-  background-color: white;
   color: black;
   text-align: center;
   padding-bottom: 4rem;
+  padding-top: 5em;
+  background-color: rgb(231, 231, 231);
 }
 
-
 .mf-top-descriptor-padding {
-  margin-bottom: 5rem;
+  padding: 2rem;
   font-size: 19px;
 }
 
@@ -131,12 +161,6 @@ body {
 .mf-section-2-right {
   font-family: montserrat, sans-serif;
   margin-left: 50px;
-}
-
-.mf-subheadings-img {
-  margin-right: 12px;
-  width: 70;
-  height: auto;
 }
 
 .mf-reg-process-img {
@@ -163,28 +187,62 @@ iframe {
 }
 
 .mf-footer {
-  font-family: Verdana, sans-serif;
-  background-color: #1E1E26;
+  font-family: Montserrat, Yantramanav, Open Sans;
+  background: linear-gradient(90deg, rgba(30,30,38,1) 0%, rgba(30,30,38,1) 43%, rgb(53, 53, 68) 100%);
+  padding-top: 2rem;
 }
 
-.mf-beta-form-footer {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  color: black;
+.mf-footer-logo {
+  font-family: Alegreya Sans SC;
+  font-size: 1.7em;
 }
 
 .mf-text-bg {
   position: absolute;
-  background-color: #ffc107;
-  width: 150px;
+  background-color: #c5ff2a;
+  width: 160px;
   height: 20px;
   top: 30px;
   opacity: 0.7;
-  left: 90px;
-  z-index: -1;
+  left: 75px;
   transform: rotate(-3deg);
+}
+
+a {
+  color: #c5ff2a;
 }
 
 .mf-high-z {
   z-index: 5;
+}
+
+.mf-row {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position:relative;
+  background-color: white;
+}
+
+.mf-green-2{
+  background-color:#1bbc9b;
+}
+
+.sep5 {
+  transform: translateY(-100%) translateY(2px) scale(1,1);
+  transform-origin: top;
+}
+
+.svg-separator{
+  display: block;
+  background: 0 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  -webkit-transform: translateY(-100%) translateY(2px);
+  transform: translateY(-100%) translateY(2px);
+  width: 100%;
 }
