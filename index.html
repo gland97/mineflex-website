@@ -47,12 +47,12 @@
             <input type="text" placeholder="EMAIL" id="email" name="lname">
           </div>
           <div class="col-xs-8 col-xl-1 col-lg-4 d-flex align-items-center">
-            <button id="beta-button" type="button" class="btn btn-warning mf-button-change mx-auto">Join Beta</button>
-            <button id="beta-button" type="button" class="btn btn-warning mf-button-change mx-auto" style="display: none;">We’re excited to have you! Check your email for details and next steps.</button>
+            <button id="mf-beta-button" type="button" class="btn mf-button-change mx-auto">Join Beta</button>
+            <button id="mf-submit-beta-button" type="button" class="btn mf-button-change mx-auto">We’re excited to have you! Check your email for details and next steps.</button>
           </div>
         </div>
         <div class="col-12 d-flex justify-content-center" style="text-align: center; display: none;">
-          <h5 id="join-status" style="font-family: yantramanav; color: #ff0000; padding: 1rem;"></h5>
+          <h5 id="join-status" style="font-family: montserrat; color: #ff0000; padding: 1rem; font-size: 1em; display: none;"></h5>
         </div>
       </div>
     </div>
@@ -184,18 +184,18 @@
       </div>
       <div class="col-md-6 d-flex">
         <div class="row align-content-center justify-content-end text-center w-100">
-          <div class="col-2 d-flex">
+          <div class="col-2">
             <p>Contact</p>
           </div>
-          <div class="col-2 d-flex">
+          <div class="col-2">
             <p>Community</p>
           </div>
-          <div class="col-2 d-flex">
+          <div class="col-2">
             <p>Company</p>
           </div>
           <div class="col-2 d-flex offset-1 flex-column d-flex align-content-center">
-            <button id="beta-button" type="button" class="btn btn-warning mf-button-change mx-auto">Join Beta</button>
-            <button id="beta-button" type="button" class="btn btn-warning mf-button-change mx-auto" style="background-color: #1e1f26; color: #c5ff2a; margin-top: 12px; margin-bottom: 12px; min-width:6rem;">Log In</button>
+            <button id="beta-button" type="button" class="btn mf-button-change mx-auto">Join Beta</button>
+            <button id="beta-button" type="button" class="btn mf-button-change mx-auto" style="background-color: #1e1f26; color: #c5ff2a; margin-top: 12px; margin-bottom: 12px; min-width:6rem;">Log In</button>
           </div>
           <div class="col-1 col-xs-0"></div>
         </div>
@@ -208,15 +208,20 @@
 
 </body>
 <script>
-  document.getElementById("beta-button").onclick = function (e) {
+  document.getElementById("mf-beta-button").onclick = function (e) {
     const email = document.getElementById("fname").value
     const fname = document.getElementById("email").value
     const status = document.getElementById("join-status")
     status.parentElement.style.display = 'none'
+    status.style.display = 'none'
+    status.parentElement.style.marginBottom = ''
 
 
     if (email.length === 0 || fname.length === 0) {
-      document.getElementById("join-status").innerHTML = "Please Enter your Email and First Name"
+      status.innerHTML = "Please Enter your Email and First Name"
+      status.parentElement.style.display = ''
+      status.style.display = 'block'
+      status.parentElement.style.marginBottom = '-30px'
     } else {
       fetch('http://localhost:4000/email/beta/signup', {
         method: 'POST',
@@ -236,20 +241,26 @@
       })
         .then(res => {
           if (res.status === 200) {
-            status.parentElement.style.display = 'block'
+            status.parentElement.style.display = ''
+            status.style.display = 'block'
             status.style.color = 'green'
+            status.parentElement.style.marginBottom = '-30px'
             status.innerHTML = "You have succesfully Joined the Beta. Please check your email for a beta code!"
           } else {
             return res.json().then(body => {
-              status.parentElement.style.display = 'block'
+              status.parentElement.style.display = ''
+              status.style.display = 'block'
               status.style.color = 'red'
+              status.parentElement.style.marginBottom = '-30px'
               status.innerHTML = body.error
             })
           }
         })
         .catch(err => {
-          status.parentElement.style.display = 'block'
+          status.parentElement.style.display = ''
+          status.style.display = 'block'
           status.style.color = 'red'
+          status.parentElement.style.marginBottom = '-30px'
           status.innerHTML = 'Unable to Complete Beta Signup!'
         })
     }

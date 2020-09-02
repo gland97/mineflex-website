@@ -63,6 +63,19 @@ body {
   text-transform: uppercase;
 }
 
+.mf-button-change:hover {
+  background-color: #1E1E26;
+  border-color:#c5ff2a;
+  min-width: max-content;
+  font-family: Yantramanav, Open sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+#mf-submit-beta-button {
+  display: none;
+}
+
 .title {
   font-family: Yantramanav, Open Sans;
   font-weight: 600;
