@@ -32,7 +32,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-size: 15px;
   font-weight: 300px;
-  margin-top: 35px;
+  margin-top: 4rem;
 }
 
 .mf-beta-form {
@@ -58,22 +58,47 @@ body {
 .mf-button-change {
   background-color: #c5ff2a;
   border-color:#c5ff2a;
-  min-width: max-content;
+  min-width: 100px;
   font-family: Yantramanav, Open sans-serif;
   text-transform: uppercase;
+  box-shadow: none;
 }
 
-.mf-button-change:hover {
+.mf-button-change:hover, .mf-button-change:focus {
   background-color: #1E1E26;
   border-color:#c5ff2a;
   min-width: max-content;
   font-family: Yantramanav, Open sans-serif;
   text-transform: uppercase;
   color: white;
+  box-shadow: none;
 }
 
 #mf-submit-beta-button {
-  display: none;
+  background-color: #c5ff2a;
+  border-color:#c5ff2a;
+  min-width: 100px;
+  font-family: Yantramanav, Open sans-serif;
+  text-transform: uppercase;
+  box-shadow: none;
+  color: white;
+}
+
+
+.mf-beta-button-login {
+  color: #c5ff2a;
+  background-color: #1e1f26; 
+  margin-top: 12px; 
+  margin-bottom: 12px; 
+  min-width:6rem;
+}
+
+.mf-beta-button-login:hover {
+  color: white;
+  background-color: #1e1f26; 
+  margin-top: 12px; 
+  margin-bottom: 12px; 
+  min-width:6rem;
 }
 
 .title {
@@ -142,6 +167,11 @@ body {
   background-color: white;
 }
 
+.mf-list {
+  font-family: Yantramanav, Montserrat, Open sans-serif;
+  font-size: 20px;
+}
+
 .mf-section-2-bottom {
   color: black;
   text-align: center;
@@ -165,7 +195,7 @@ body {
 
 .mf-descriptor-right {
   font-family: Montserrat, sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300px;
     text-align: left;
     padding-bottom: 1.5rem;
@@ -180,6 +210,10 @@ body {
   image-rendering: auto;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
+}
+
+.mf-icon {
+  color: #c5ff2a;
 }
 
 button, input {
@@ -221,8 +255,13 @@ iframe {
   transform: rotate(-3deg);
 }
 
-a {
-  color: #c5ff2a;
+.mf-a {
+  color: white;
+}
+
+.mf-a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .mf-high-z {
