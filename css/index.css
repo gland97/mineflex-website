@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(90deg, rgba(30,30,38,1) 0%, rgba(30,30,38,1) 43%, rgb(53, 53, 68) 100%);
+  background: #06080d;
   color: white;
   font-family: Montserrat, Yantramanav, Open Sans;
 }
@@ -8,8 +8,8 @@ body {
   font-family: Yantramanav, Montserrat, Open Sans;
   font-weight: 600;
   font-size: 38px;
-  padding-top: 45px;
-  padding-bottom: 30px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .mf-subheadings {
@@ -18,6 +18,7 @@ body {
   padding-top: 18px;
   z-index: 1;
   padding-left: 0.4em;
+  color: black;
 }
 
 .logo {
@@ -44,30 +45,31 @@ body {
   font-weight: lighter;
   font-size: 21px;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .section-1-button {
-  color: #c5ff2a;
+  color: #6f87f7;
 }
 
 .yellowtext {
-  color: #c5ff2a;
+  color: #6f87f7;
 }
 
 .mf-button-change {
-  background-color: #c5ff2a;
-  border-color:#c5ff2a;
+  background-color:  #6f87f7;
+  border-color: #6f87f7;
   min-width: 100px;
   font-family: Yantramanav, Open sans-serif;
   text-transform: uppercase;
   box-shadow: none;
+  color: #06080d;
 }
 
 .mf-button-change:hover, .mf-button-change:focus {
-  background-color: #1E1E26;
-  border-color:#c5ff2a;
-  min-width: max-content;
+  background-color: #06080d;
+  border-color:#6f87f7;
+  min-width: 100px;
   font-family: Yantramanav, Open sans-serif;
   text-transform: uppercase;
   color: white;
@@ -75,8 +77,8 @@ body {
 }
 
 #mf-submit-beta-button {
-  background-color: #c5ff2a;
-  border-color:#c5ff2a;
+  background-color: #6f87f7;
+  border-color:#6f87f7;
   min-width: 100px;
   font-family: Yantramanav, Open sans-serif;
   text-transform: uppercase;
@@ -86,8 +88,8 @@ body {
 
 
 .mf-beta-button-login {
-  color: #c5ff2a;
-  background-color: #1e1f26; 
+  color:  #6f87f7;
+  background-color: #06080d; 
   margin-top: 12px; 
   margin-bottom: 12px; 
   min-width:6rem;
@@ -95,7 +97,7 @@ body {
 
 .mf-beta-button-login:hover {
   color: white;
-  background-color: #1e1f26; 
+  background-color: #06080d; 
   margin-top: 12px; 
   margin-bottom: 12px; 
   min-width:6rem;
@@ -165,6 +167,7 @@ body {
   padding-top: 6.5rem;
   padding-bottom: 0.5rem;
   background-color: white;
+
 }
 
 .mf-list {
@@ -177,7 +180,7 @@ body {
   text-align: center;
   padding-bottom: 4rem;
   padding-top: 5em;
-  background-color: rgb(231, 231, 231);
+  background-color: whitesmoke;
 }
 
 .mf-top-descriptor-padding {
@@ -187,7 +190,7 @@ body {
 
 .mf-descriptor-left {
   font-family: Montserrat, sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300px;
     text-align: left;
     margin-bottom: 3rem;
@@ -213,7 +216,7 @@ body {
 }
 
 .mf-icon {
-  color: #c5ff2a;
+  color: black;
 }
 
 button, input {
@@ -235,7 +238,7 @@ iframe {
 
 .mf-footer {
   font-family: Montserrat, Yantramanav, Open Sans;
-  background: linear-gradient(90deg, rgba(30,30,38,1) 0%, rgba(30,30,38,1) 43%, rgb(53, 53, 68) 100%);
+  background: #06080d;
   padding-top: 2rem;
 }
 
@@ -246,7 +249,7 @@ iframe {
 
 .mf-text-bg {
   position: absolute;
-  background-color: #c5ff2a;
+  background-color: #6f87f7;
   width: 160px;
   height: 20px;
   top: 30px;
@@ -278,7 +281,7 @@ iframe {
 }
 
 .mf-green-2{
-  background-color:#1bbc9b;
+  background-color: #F5F5F5;
 }
 
 .sep5 {

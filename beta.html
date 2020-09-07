@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,7 +23,7 @@
       <div class="col-12 d-flex align-items-end">
         <img src="images/Mineflex_Logo-01.svg" alt="Mineflex" width="70" height="auto" style="padding-right: 3px;">
         <p style="margin-bottom: 0px;">MINEFLEX</p>
-        <p class="align-self-center" style="margin-bottom:3px; font-size:15px;">BETA</p>
+        <p class="align-self-center" style="margin-top: 0.5em; font-size:15px;">BETA</p>
       </div>
     </div>
     <div class="row justify-content-center">
@@ -51,7 +52,7 @@
           </div>
           <div class="col-12 d-flex justify-content-center" style="text-align: center; display: none;">
             <h5 id="join-status"
-              style="font-family: montserrat; color: #ff0000; padding: 1rem; font-size: 1em; display: none;"></h5>
+              style="font-family: montserrat; color: #6f87f7; padding: 1rem; font-size: 1em; display: none;"></h5>
           </div>
         </div>
         <div id="mf-beta-signup-success" class="row justify-content-center" style="display: none;">
@@ -66,8 +67,7 @@
     <div class="row mf-section-1-details">
       <div class="col-md-3 mb-4 mb-md-0">
         <p class="text-center">Mineflex monitors the <span class="yellowtext"><b>hours</b></span> you play and the <span
-            class="yellowtext"><b>storage</b></span> you use so your monthly bill reflects your usage. No
-          more paying for hours you’re not playing.</p>
+            class="yellowtext"><b>storage</b></span> you use so your monthly bill reflects your usage.</p>
       </div>
       <div class="col-md-auto d-none d-md-block" class="separator">
         <img src="images/Lines, new.png" style="height: 62px; margin: 20px;">
@@ -82,36 +82,61 @@
     </div>
     <div class="row">
       <div class="col-12 text-center section-1-arrow">
-        <img src="images/white-arrow-downward.svg" class="img-fluid" alt="Responsive image" width="100" height="auto">
+        <i class="fas fa-arrow-down" class="img-fluid" alt="Responsive image" width="400" height="auto"
+          style="font-size: 4rem;"></i>
       </div>
     </div>
   </div>
 
   <!-- SECTION TWO-->
   <div class="container-fluid">
-    <div class="row mf-section-2-top ">
+    <div class="row mf-section-2-top">
       <div class="col-md-5 offset-md-1 col-sm-12 pr-lg-5 pl-lg-5">
         <img src="images/section-2-graphic.png" class="img-fluid" height="350">
       </div>
       <div class="col-md-5 col-sm-12 pr-lg-5 pl-lg-5">
-        <h1 class="mf-headings">Flexibility is about more than price</h1>
-        <p class="mf-top-descriptor-padding pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-xl-4 pl-xl-4">Mineflex is built around
-          individual server hosting needs. From mod pack and
+        <h1 class="mf-headings">Flexibility is About More than Price</h1>
+        <p class="mf-top-descriptor-padding pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-xl-4 pl-xl-4"></p>
+        <p class="mf-top-descriptor-padding pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-xl-4 pl-xl-4">From mod pack and
           plugin edits, to unlimited server slots and unrestricted server size, Mineflex allows you to choose what
           features are important to you.</p>
 
         <div class="row d-flex text-left justify-content-center">
           <div class="col-md-6 mf-list">
-            <ul>
-              <li>Upload prexisting worlds</li>
-              <li>Unlimited players</li>
-            </ul>
+            <div class="row">
+              <div class="col-1">
+                <i class="fas fa-angle-double-right"></i>
+              </div>
+              <div class="col">
+                <p>Upload prexisting worlds</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <i class="fas fa-angle-double-right d-flex"></i>
+              </div>
+              <div class="col">
+                <p>Unlimited players</p>
+              </div>
+            </div>
           </div>
           <div class="col-md-6 mf-list">
-            <ul>
-              <li>Unlimited servers</li>
-              <li>Customizable server configuartion</li>
-            </ul>
+            <div class="row">
+              <div class="col-1">
+                <i class="fas fa-angle-double-right"></i>
+              </div>
+              <div class="col">
+                <p>Unlimited servers</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <i class="fas fa-angle-double-right d-flex"></i>
+              </div>
+              <div class="col">
+                <p>Customizable server configuration</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -120,18 +145,18 @@
     <div class="row" style="background-color: white;">
       <div style="width: 100%;">
         <svg id="" preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 200" style="display: block;" data-height="200">
-          <polygon class="" style="fill: rgb(231,231,231);"
+          <polygon class="" style="fill: whitesmoke" ;
             points="1488,134 1304,100 1068,152 909.935,92.044 672,198 364,142 242,32 -4,95 -4,204 1604,204 1604,0 ">
           </polygon>
-          <polygon class="" style="opacity: 1;fill: #1e2026;"
+          <polygon class="" style="opacity: 1;fill: #06080d;"
             points="672,198 364,142 242,32 -4,95 -4,82.333 242,32 374,136 "></polygon>
-          <polygon class="" style="opacity: 1;fill: #1e2026;" points="894,86 672,198 909.935,92.044 "></polygon>
-          <polygon class="" style="opacity: 1;fill: #c7ff29;"
+          <polygon class="" style="opacity: 1;fill: #06080d;" points="894,86 672,198 909.935,92.044 "></polygon>
+          <polygon class="" style="opacity: 1;fill: #6f87f7;"
             points="1068,152 1302,86 1486,126 1604,0 1488,134 1304,100 "></polygon>
         </svg>
       </div>
     </div>
-
+  
     <div class="row mf-section-2-bottom ">
       <div
         class="d-flex col-sm-8 offset-sm-2 col-lg-5 offset-lg-1 col-xl-4 offset-xl-2 align-items-end mf-section-2-column-left">
@@ -145,7 +170,7 @@
             <p class="mf-descriptor-left">The Mineflex discord channel is the best place to give feedback, provide
               suggestions and hear about product updates.</p>
           </div>
-
+  
           <div class="col-12 d-flex justify-content-center">
             <iframe src="https://discordapp.com/widget?id=733807279287304203&amp;theme=dark" width="350" height="500"
               allowtransparency="true" frameborder="0"
@@ -201,14 +226,14 @@
         </div>
       </div>
     </div>
-
+  
     <div class="row mf-footer">
       <div class="col-md-6 mf-footer-logo">
         <div class="row">
           <div class="col-12 col-md-11 justify-content-center justify-content-md-start offset-0 offset-md-1 d-flex mb-4">
             <img src="images/Mineflex_Logo-01.svg" alt="Mineflex" width="70" height="auto">
             <p class="d-none d-md-block" style="margin-bottom: 0px; padding-top: 38px">MINEFLEX</p>
-            <p class="d-none d-md-block align-self-center" style="margin-bottom:14px; font-size:15px;">BETA</p>
+            <p class="d-none d-md-block align-self-center" style="margin-top: 1.5em; font-size:15px;">BETA</p>
           </div>
         </div>
       </div>
@@ -240,7 +265,8 @@
           <div class="col-6">
             <div class="row">
               <div class="col-lg-3 col-md-6 col-xs-12 offset-1">
-                <p style="margin: 0px; padding: 12px; font-size: 12px; font-family: montserrat;">© Mineflex, Inc. 2020.
+                <p style="margin: 0px; padding: 12px; font-size: 12px; font-family: montserrat;">© Mineflex, Inc.
+                  2020.
                 </p>
               </div>
             </div>
@@ -248,11 +274,12 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Zendesk Widget script -->
-    <script id="ze-snippet"
-      src="https://static.zdassets.com/ekr/snippet.js?key=eb2b1d98-ef6f-49b1-942f-73a9adc416da"> </script>
-    <!-- End of Mineflex Zendesk Widget script -->
+  <!-- Zendesk Widget script -->
+  <script id="ze-snippet"
+    src="https://static.zdassets.com/ekr/snippet.js?key=eb2b1d98-ef6f-49b1-942f-73a9adc416da"> </script>
+  <!-- End of Mineflex Zendesk Widget script -->
 
 
 </body>
