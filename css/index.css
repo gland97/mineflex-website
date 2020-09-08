@@ -33,12 +33,12 @@ body {
   font-family: oswald, sans-serif;
   font-size: 15px;
   font-weight: 300px;
-  margin-top: 4rem;
+  margin-top: 7rem;
   letter-spacing: .2px;
 }
 
 .mf-beta-form {
-  margin-bottom: 60px;
+  margin-bottom: 5.5em;
 }
 
 .mf-section-1-details {
@@ -46,7 +46,7 @@ body {
   font-weight: lighter;
   font-size: 1.5em;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .section-1-button {
