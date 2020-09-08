@@ -1,11 +1,11 @@
 body {
   background: #06080d;
   color: white;
-  font-family: Montserrat, Yantramanav, Open Sans;
+  font-family: oswald, Yantramanav, Open Sans;
 }
 
 .mf-headings {
-  font-family: Yantramanav, Montserrat, Open Sans;
+  font-family: Yantramanav, oswald, Open Sans;
   font-weight: 600;
   font-size: 38px;
   padding-top: 1rem;
@@ -13,12 +13,12 @@ body {
 }
 
 .mf-subheadings {
-  font-family: Yantramanav, Montserrat, Open Sans;
+  font-family: Yantramanav, oswald, Open Sans;
   font-weight: 600;
   padding-top: 18px;
   z-index: 1;
   padding-left: 0.4em;
-  color: black;
+  color: #000000d1;
 }
 
 .logo {
@@ -30,10 +30,11 @@ body {
 }
 
 .mf-descriptor-section-1 {
-  font-family: Montserrat, sans-serif;
+  font-family: oswald, sans-serif;
   font-size: 15px;
   font-weight: 300px;
   margin-top: 4rem;
+  letter-spacing: .2px;
 }
 
 .mf-beta-form {
@@ -41,11 +42,11 @@ body {
 }
 
 .mf-section-1-details {
-  font-family: Montserrat, sans-serif;
+  font-family: oswald, sans-serif;
   font-weight: lighter;
-  font-size: 21px;
+  font-size: 1.5em;
   justify-content: center;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 .section-1-button {
@@ -98,20 +99,46 @@ body {
 .mf-beta-button-login:hover {
   color: white;
   background-color: #06080d; 
-  margin-top: 12px; 
-  margin-bottom: 12px; 
+  margin-top: .75em; 
+  margin-bottom: 75em; 
   min-width:6rem;
 }
 
 .title {
   font-family: Yantramanav, Open Sans;
   font-weight: 600;
-  font-size: 68px;
+  font-size: 4.25em;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-top: 0.3em;
   margin-right: 17%;
   margin-left: 17%;
+ 
+}
+
+@media (min-width: 768px) { 
+  .title {
+    font-family: Yantramanav, Open Sans;
+    font-weight: 600;
+    font-size: 4.25em;
+    text-align: center;
+    margin-top: 0.3em;
+    margin-right: 17%;
+    margin-left: 17%;
+    margin-bottom: .7em;
+  }
+}
+
+@media (max-width: 767px) { 
+  .title {
+    font-family: Yantramanav, Open Sans;
+    font-weight: 600;
+    font-size: 3.1em;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-right: 10%;
+    margin-left: 10%;
+   margin-bottom: 1em;
+  }
 }
 
 .email-form {
@@ -170,9 +197,21 @@ body {
 
 }
 
+.mf-list-top {
+  padding-top: 1.9rem;
+  color: #000000d1;
+  
+}
+
 .mf-list {
-  font-family: Yantramanav, Montserrat, Open sans-serif;
+  font-family: Yantramanav, oswald, Open sans-serif;
   font-size: 20px;
+  font-family: oswald, yantramanav, sans-serif;
+}
+
+.mf-font-a-bullet {
+  padding-right: .7em;
+  padding-top: 4px;
 }
 
 .mf-section-2-bottom {
@@ -184,24 +223,28 @@ body {
 }
 
 .mf-top-descriptor-padding {
-  padding: 2rem;
-  font-size: 19px;
+  padding: 1rem;
+  font-size: 20px;
+  margin-bottom: 0em;
+  letter-spacing: .5px;
 }
 
 .mf-descriptor-left {
-  font-family: Montserrat, sans-serif;
-    font-size: 17px;
-    font-weight: 300px;
-    text-align: left;
-    margin-bottom: 3rem;
+  font-family: oswald, sans-serif;
+  font-size: 18px;
+  font-weight: 300px;
+  text-align: left;
+  margin-bottom: 3rem;
+  letter-spacing: .5px;
 }
 
 .mf-descriptor-right {
-  font-family: Montserrat, sans-serif;
-    font-size: 17px;
-    font-weight: 300px;
-    text-align: left;
-    padding-bottom: 1.5rem;
+  font-family: oswald, sans-serif;
+  font-size: 18px;
+  font-weight: 300px;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  letter-spacing: .5px;
 }
 
 .mf-section-2-right {
@@ -216,7 +259,7 @@ body {
 }
 
 .mf-icon {
-  color: black;
+  color: #000000d1;
 }
 
 button, input {
@@ -237,7 +280,7 @@ iframe {
 }
 
 .mf-footer {
-  font-family: Montserrat, Yantramanav, Open Sans;
+  font-family: oswald, Yantramanav, Open Sans;
   background: #06080d;
   padding-top: 2rem;
 }
