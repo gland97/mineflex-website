@@ -56,8 +56,7 @@
         </div>
         <div id="mf-beta-signup-success" class="row justify-content-center" style="display: none;">
           <div class="col-xs-8 col-xl-1 col-lg-4 d-flex align-items-center justify-content-center">
-            <button id="mf-submit-beta-button" type="button" class="btn mf-button-change mx-auto">You have succesfully
-              Joined the Beta. Please check your email for a beta code!</button>
+            <p class="text-center" style="font-family: yamantranav; color: #6f87f7; padding: 1rem; font-size: 1em;">Welcome! Check your email for a beta code!</p>
           </div>
         </div>
       </div>
@@ -252,7 +251,7 @@
           <div class="col-lg-2 col-md-12 d-flex offset-lg-1 flex-column d-flex align-content-center">
             <a href="#top"><button id="beta-button" type="button" class="btn mf-button-change mx-auto">Join
                 Beta</button></a>
-            <a href="/admin">
+            <a href="/admin/">
               <button id="beta-button" type="button" class="btn mf-button-change mf-beta-button-login mx-auto">
                 Log In
               </button>
@@ -286,8 +285,8 @@
 </body>
 <script>
   document.getElementById("mf-beta-button").onclick = function (e) {
-    const email = document.getElementById("fname").value
-    const fname = document.getElementById("email").value
+    const fname = document.getElementById("fname").value
+    const email = document.getElementById("email").value
     const status = document.getElementById("join-status")
     status.parentElement.style.display = 'none'
     status.style.display = 'none'
