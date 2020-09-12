@@ -310,6 +310,13 @@ iframe {
   text-decoration: underline;
 }
 
+.mf-ex-docs {
+  margin: 0px; 
+  padding: 12px; 
+  font-size: 12px; 
+  font-family: montserrat;"
+}
+
 .mf-high-z {
   z-index: 5;
 }
@@ -344,3 +351,4 @@ iframe {
   transform: translateY(-100%) translateY(2px);
   width: 100%;
 }
+
