@@ -1,7 +1,10 @@
+
+  
 body {
   background: #06080d;
   color: white;
   font-family: oswald, Yantramanav, Open Sans;
+
 }
 
 .mf-headings {
@@ -23,10 +26,30 @@ body {
 
 .logo {
   padding-left: 50px;
+  padding-right: 50px;
   padding-top: 50px;
   font-family: Alegreya Sans SC;
   font-size: 1.7em;
+}
 
+.mf-login-header {
+  background-color: white;
+  border-color: white;
+  min-width: 100px;
+  font-family: Yantramanav, Open sans-serif;
+  text-transform: uppercase;
+  box-shadow: none;
+  color: #06080d;
+}
+
+.mf-login-header:hover, .mf-login-header:focus {
+  background-color: #06080d;
+  border-color: white;
+  min-width: 100px;
+  font-family: Yantramanav, Open sans-serif;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: none;
 }
 
 .mf-descriptor-section-1 {
