@@ -350,6 +350,15 @@
           if (res.status === 200) {
             document.getElementById("mf-beta-signup-input").style.display = 'none';
             document.getElementById("mf-beta-signup-success").style.display = 'flex';
+            
+            if (window.ga) {
+              ga('send', {
+                hitType: 'event',
+                eventCategory: 'Email',
+                eventAction: 'submit',
+                eventLabel: 'beta'
+              });
+            }
           } else {
             return res.json().then(body => {
               status.parentElement.style.display = ''
