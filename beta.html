@@ -294,10 +294,10 @@
                   2020.
                 </p>
                 <p class="mf-ex-docs">
-                  <a href="/mineflex-website/tandc.html">Terms & Conditions</a>
+                  <a href="/tandc.html">Terms & Conditions</a>
                 </p>
                 <p class="mf-ex-docs">
-                  <a href="/mineflex-website/privacy-policy.html">Privacy Policy</a>
+                  <a href="/privacy-policy.html">Privacy Policy</a>
                 </p>
               </div>
             </div>
@@ -315,6 +315,23 @@
 
 </body>
 <script>
+  function getQueryVariable(variable) {
+    try {
+      var query = window.location.search.substring(1);
+      var vars = query.split('&');
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+          return decodeURIComponent(pair[1]);
+        }
+      }
+
+      return '';
+    } catch (e) {
+      return '';
+    }
+  }
+
   document.getElementById("mf-beta-button").onclick = function (e) {
     const fname = document.getElementById("fname").value
     const email = document.getElementById("email").value
@@ -340,42 +357,42 @@
           first_name: fname,
           last_name: '',
           custom_fields: {
-            w1_T: '',
-            w2_T: '',
-            w3_T: '',
+            w1_T: getQueryVariable('utm_source'),
+            w2_T: getQueryVariable('utm_medium'),
+            w3_T: getQueryVariable('utm_campaign')
           }
         })
       })
-        .then(res => {
-          if (res.status === 200) {
-            document.getElementById("mf-beta-signup-input").style.display = 'none';
-            document.getElementById("mf-beta-signup-success").style.display = 'flex';
-            
-            if (window.ga) {
-              ga('send', {
-                hitType: 'event',
-                eventCategory: 'Email',
-                eventAction: 'submit',
-                eventLabel: 'beta'
-              });
-            }
-          } else {
-            return res.json().then(body => {
-              status.parentElement.style.display = ''
-              status.style.display = 'block'
-              status.style.color = 'red'
-              status.parentElement.style.marginBottom = '-30px'
-              status.innerHTML = body.error
-            })
+      .then(res => {
+        if (res.status === 200) {
+          document.getElementById("mf-beta-signup-input").style.display = 'none';
+          document.getElementById("mf-beta-signup-success").style.display = 'flex';
+          
+          if (window.ga) {
+            ga('send', {
+              hitType: 'event',
+              eventCategory: 'Email',
+              eventAction: 'submit',
+              eventLabel: 'beta'
+            });
           }
-        })
-        .catch(err => {
-          status.parentElement.style.display = ''
-          status.style.display = 'block'
-          status.style.color = 'red'
-          status.parentElement.style.marginBottom = '-30px'
-          status.innerHTML = 'Unable to Complete Beta Signup!'
-        })
+        } else {
+          return res.json().then(body => {
+            status.parentElement.style.display = ''
+            status.style.display = 'block'
+            status.style.color = 'red'
+            status.parentElement.style.marginBottom = '-30px'
+            status.innerHTML = body.error
+          })
+        }
+      })
+      .catch(err => {
+        status.parentElement.style.display = ''
+        status.style.display = 'block'
+        status.style.color = 'red'
+        status.parentElement.style.marginBottom = '-30px'
+        status.innerHTML = 'Unable to Complete Beta Signup!'
+      })
     }
   }
 </script>
