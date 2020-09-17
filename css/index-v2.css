@@ -104,6 +104,12 @@ body {
   font-size: 1.2em;
 }
 
+.mf-btn-join-beta {
+  color: #ffffff;
+  font-family: 'Noto Sans JP';
+  text-transform: uppercase; 
+}
+
 /*CTA FORM*/
 :root {
   --input-padding-x: 1.5rem;
@@ -112,9 +118,11 @@ body {
 
 .mf-form-title {
   padding: 2em;
-  background-color: lightgray; 
+  background-color: rgb(238, 238, 238); 
   border-top-left-radius: 0.3em; 
   border-top-right-radius: 0.3rem;
+  color: #333333;
+  font-family: 'Noto Sans JP';
 }
 
 .card-title {
@@ -124,13 +132,17 @@ body {
   font-family: 'Noto Sans JP';
 }
 
+.form-control {
+  color: #33333388;
+}
+
 .form-signin {
   width: 100%;
 }
 
 .form-signin .btn {
   font-size: 80%;
-  border-radius: 5rem;
+  border-radius: .3rem;
   letter-spacing: .1rem;
   font-weight: bold;
   padding: 1rem;
@@ -145,7 +157,7 @@ body {
 
 .form-label-group input {
   height: auto;
-  border-radius: 2rem;
+  border-radius: .3rem;
 }
 
 .form-label-group>label {
@@ -157,10 +169,12 @@ body {
   margin-bottom: 0;
   /* Override default `<label>` margin */
   line-height: 1.5;
-  color: ##495057d9;
+  color: #495057d9;
   border: 1px solid transparent;
-  border-radius: .25rem;
+  border-radius: .3rem;
   transition: all .1s ease-in-out;
+  padding-top: .4em;
+  padding-left: .7em;
 }
 
 .form-label-group input::-webkit-input-placeholder {
@@ -186,6 +200,7 @@ body {
 .mf-btn-join-beta {
   background-color: #6f87f5;
   border-color: #6f87f5;
+  color: white;
 }
 
 .btn-primary:hover {
@@ -361,5 +376,24 @@ body {
   padding: .7em;
 }
 
+.mf-pre-footer {
+  background-color: #111c4d;
+  color: #333333;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 
+.mf-footer {
+  font-family: Open Sans;
+  background: #6f87f5
+  padding: 1.5rem;
+}
+
+.mf-footer-logo {
+  font-family: 'Noto Sans JP'
+  font-size: 1.15em;
+  font-family: 'Noto Sans JP';
+  color: white;
+  letter-spacing: .1rem;
+  font-weight: bold;
 

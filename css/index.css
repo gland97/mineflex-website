@@ -324,8 +324,10 @@ iframe {
   transform: rotate(-3deg);
 }
 
-.mf-a {
+.mf-a-footer {
   color: white;
+  font-family: 'Open Sans';
+  font-size: 1em;
 }
 
 .mf-a:hover {
