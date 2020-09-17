@@ -1,0 +1,365 @@
+body {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mf-section-1-container {
+  padding-top: 4.375em;
+  margin-bottom: 8em;
+  background: #6f87f6;
+  
+}
+
+
+/* .mf-section-1-container:after {
+  background-image: url('../images/mf-background-texture.png');
+  opacity: 0.2;
+  z-index: 1;
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+} */
+
+/*HEADER*/
+
+.mf-header {
+  margin-bottom: 4.5em;
+}
+
+.logo {
+  font-size: 1.15em;
+  font-family: 'Noto Sans JP';
+  color: white;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.mf-logo-mineflex {
+  margin-top: 1.1em;
+  margin-bottom: -1em;
+  padding-left: 3px;
+}
+
+.mf-logo-beta {
+  font-size: .6em;
+  margin-top: 13px;
+}
+
+.mf-top-main-row {
+
+}
+
+.mf-title-col {
+
+}
+
+.mf-login-header {
+  background-color: white;
+  border-color: white;
+  box-shadow: none;
+  color: #333333;
+  font-family: 'Noto Sans JP';
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  transition: all .1s ease-in-out;
+  border-radius: .3rem;
+  padding: 1rem;
+  font-size: 90%;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+  font-family: 'Noto Sans JP';
+  text-transform: uppercase; 
+}
+
+.mf-login-header:hover, .mf-login-header:focus {
+  background-color: #6f87f6;
+  border-color: white;
+  color: #333333;
+  box-shadow: none;
+  font-family: 'Noto Sans JP';
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  transition: all .1s ease-in-out;
+  border-radius: .3rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase; 
+}
+/*END OF HEADER*/
+
+.mf-title {
+  font-size: 3.3em;
+  font-family: 'Noto Sans JP';
+  margin-bottom: .2em;
+}
+
+.mf-subtitle {
+  font-size: 1.2em;
+}
+
+/*CTA FORM*/
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+.mf-form-title {
+  padding: 2em;
+  background-color: lightgray; 
+  border-top-left-radius: 0.3em; 
+  border-top-right-radius: 0.3rem;
+}
+
+.card-title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #333333;
+  font-family: 'Noto Sans JP';
+}
+
+.form-signin {
+  width: 100%;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+  font-family: 'Noto Sans JP';
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 2rem;
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: ##495057d9;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.mf-btn-join-beta {
+  background-color: #6f87f5;
+  border-color: #6f87f5;
+}
+
+.btn-primary:hover {
+  background-color: #6379db;
+  border-color: #6379db;
+}
+
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+}
+
+.btn-google:hover {
+  background-color: #ad2317;
+  border-color: #ad2317;
+  color: white;
+}
+
+
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+}
+
+.btn-facebook:hover {
+  background-color: #293f6d;
+  border-color: #293f6d;
+  color: white;
+}
+
+.mf-checkbox {
+  color: #333333;
+  font-family: 'Open Sans';
+  font-size: .8em;
+}
+
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/*END OF CTA FORM*/
+
+
+/*SECTION TWO*/
+
+.mf-bottom-main {
+  background-color: white;
+  color: #333333;
+}
+
+
+.mf-discord-col {
+  background-color: white;
+
+}
+
+.mf-filler-col {
+}
+
+.mf-filler-row {
+  background-color: #6f87f6 !important;
+  padding-bottom: 3em;
+}
+
+.mf-a {
+  color: #333333;
+}
+
+.mf-a:hover {
+  color: #333333;
+  text-decoration: underline;
+}
+
+.mf-arrow-up {
+  color: #333333;
+  transform: rotate(45deg);
+  font-size: 1.5em;
+  padding-right: .4em;
+}
+
+.mf-left-box {
+  margin-top: 5em;
+}
+
+.mf-section-two-titles-left {
+  font-size: 2em;
+  font-family: 'Noto Sans JP';
+  color: #333333;
+  background-color: white;
+  margin-bottom: 0;
+  padding: .7em;
+}
+
+.mf-section-two-title-center {
+  font-size: 2em;
+  font-family: 'Noto Sans JP';
+  margin-bottom: .5em;
+  color: #333333;
+  background-color: white;
+  align-content: center;
+  padding-bottom: 2em;
+}
+
+.mf-section-2-grid {
+  background-color: white;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.mf-card {
+  border: .2em;
+  border-color: gainsboro;
+  text-align: center;
+  color: #333333;
+  width: 20rem;
+  border-radius: .3rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.mf-card-image {
+  font-size: 2em;
+}
+
+.mf-card-title {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 2em;
+  font-size: 80%;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+
+  font-family: 'Noto Sans JP';
+}
+
+.mf-card-text {
+  font-family: 'Open Sans';
+  font-size: 1em;
+}
+
+.mf-graphic-row {
+  background-color: rgb(233, 233, 233);
+  color: #333333;
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+
+.mf-pic-description {
+  font-size: 2em;
+  font-family: 'Noto Sans JP';
+  padding: .7em;
+}
+
+
+
