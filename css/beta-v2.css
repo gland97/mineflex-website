@@ -4,32 +4,16 @@ body {
 }
 
 .mf-section-1-container {
-  padding-top: 4.375em;
   background: #6f87f6;
-  
 }
 
-
-/* .mf-section-1-container:after {
-  background-image: url('../images/mf-background-texture.png');
-  opacity: 0.2;
-  z-index: 1;
-  content: ' ';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-} */
-
-/*HEADER*/
+.beta-rewards-header {
+  background: red;
+}
 
 .mf-header {
-  margin-bottom: 4.5em;
+  padding-bottom: 4em;
+  padding-top: 2em;
 }
 
 .logo {
@@ -90,6 +74,7 @@ body {
   font-size: 3.5em;
   font-family: 'Noto Sans JP';
   margin-bottom: .2em;
+  font-weight: 900;
 }
 
 .mf-subtitle {
@@ -104,6 +89,10 @@ body {
   font-family: 'Noto Sans JP';
   text-transform: uppercase; 
   padding: 1em;
+}
+
+.mf-a-hover-no-underline:hover {
+  text-decoration: none;
 }
 
 /*CTA FORM*/
@@ -301,8 +290,8 @@ body {
 
 .mf-section-2-grid {
   background-color: white;
-  padding-top: 10em;
-  padding-bottom: 10em;
+  padding-top: 8em;
+  padding-bottom: 8em;
 }
 
 .mf-card {
@@ -321,33 +310,27 @@ body {
 }
 
 .mf-card-title {
-  font-family: 'Open Sans';
-  font-weight: 700;
-  font-size: 2em;
-  font-size: 80%;
-  letter-spacing: .1rem;
   font-weight: bold;
-  padding: 1rem;
-
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
   font-family: 'Noto Sans JP';
 }
 
 .mf-card-text {
   font-family: 'Open Sans';
   font-size: 1em;
+  color: #525252;
 }
 
 .mf-graphic-row {
   background-color: #efefef;
   color: #333333;
-  padding-top: 6em;
-  padding-bottom: 6em;
 }
 
 .mf-pic-description {
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: 'Noto Sans JP';
-  padding: .7em;
+  padding-bottom: .7em;
 }
 
 .mf-pre-footer {
