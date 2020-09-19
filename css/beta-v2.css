@@ -5,6 +5,7 @@ body {
 
 .mf-section-1-container {
   background: #6f87f6;
+  position: relative;
 }
 
 .beta-rewards-header {
@@ -227,15 +228,13 @@ body {
   padding-bottom: 8em;
 }
 
-.mf-card {
+.mf-box {
   border: .2em;
   border-color: gainsboro;
   text-align: center;
   color: #333333;
   width: 25rem;
   height: 15rem;
-  border-radius: .2rem;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .mf-card-image {
