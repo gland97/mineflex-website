@@ -211,6 +211,10 @@ body {
   border-top-left-radius: 0.3rem;
 }
 
+.mf-sub-text-grey {
+  color: #898989
+}
+
 .mf-section-two-title-center {
   font-size: 2.5em;
   font-family: 'Noto Sans JP';
@@ -218,7 +222,6 @@ body {
   color: #333333;
   background-color: white;
   align-content: center;
-  padding-bottom: 4rem;
   font-weight: 900;
 }
 
@@ -256,8 +259,12 @@ body {
 .mf-card-text {
   font-family: 'Open Sans';
   font-size: 1em;
-  color: #525252;
+  color: #898989;
   padding: .5em;
+}
+
+.mf-subtitle-text-gray {
+  color: #595959;
 }
 
 .mf-pic-description {
