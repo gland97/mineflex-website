@@ -8,7 +8,16 @@ body {
 }
 
 .beta-rewards-header {
-  background: red;
+  background: #ffffff;
+  font-family: 'noto sans jp';
+  font-size: 1em;
+  color: #333333;
+}
+
+.mf-button-rewards {
+  font-size: .8rem;
+  font-weight: 900;
+  margin-right: .3rem;
 }
 
 .mf-header {
@@ -79,8 +88,8 @@ body {
 
 .mf-subtitle {
   font-size: 1.3em;
-  margin-top: 1.5em;
-  width: 55%;
+  margin-top: .7em;
+  width: 75%;
   font-weight: 300;
 }
 
@@ -104,30 +113,13 @@ body {
   border-top-right-radius: 0.3rem;
   color: #333333;
   font-family: 'Noto Sans JP';
+  font-weight: 900;
 }
 
 .card-title {
   font-weight: 300;
   font-size: 1.5rem;
   color: #333333;
-  font-family: 'Noto Sans JP';
-}
-
-.form-control {
-  color: #33333388;
-}
-
-.form-signin {
-  width: 100%;
-}
-
-.form-signin .btn {
-  font-size: 80%;
-  border-radius: .2rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  transition: all 0.2s;
   font-family: 'Noto Sans JP';
 }
 
@@ -173,81 +165,16 @@ body {
   border-color: #6379db;
 }
 
-.btn-google {
-  color: white;
-  background-color: #ea4335;
-}
-
-.btn-google:hover {
-  background-color: #ad2317;
-  border-color: #ad2317;
-  color: white;
-}
-
-
-.btn-facebook {
-  color: white;
-  background-color: #3b5998;
-}
-
-.btn-facebook:hover {
-  background-color: #293f6d;
-  border-color: #293f6d;
-  color: white;
-}
-
 .mf-checkbox {
   color: #333333;
   font-family: 'Open Sans';
   font-size: .8em;
 }
 
-
-/* Fallback for Edge
--------------------------------------------------- */
-
-@supports (-ms-ime-align: auto) {
-  .form-label-group>label {
-    display: none;
-  }
-  .form-label-group input::-ms-input-placeholder {
-    color: #777;
-  }
-}
-
-/* Fallback for IE
--------------------------------------------------- */
-
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-  .form-label-group>label {
-    display: none;
-  }
-  .form-label-group input:-ms-input-placeholder {
-    color: #777;
-  }
-}
-
 /*END OF CTA FORM*/
 
 
 /*SECTION TWO*/
-
-.mf-bottom-main {
-  background-color: white;
-  color: #333333;
-}
-
-
-.mf-discord-col {
-  background-color: white;
-
-}
-
-.mf-filler-row {
-  background-color: #6f87f6 !important;
-  padding-bottom: 3em;
-}
 
 .mf-a {
   color: #333333;
@@ -267,15 +194,20 @@ body {
 
 .mf-left-box {
   margin-top: 5em;
+  border-top-right-radius: 0.3em;
+  border-top-left-radius: 0.3em;
 }
 
 .mf-section-two-titles-left {
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: 'Noto Sans JP';
   color: #333333;
   background-color: white;
   margin-bottom: 0;
   padding: .7em;
+  font-weight: 900;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
 }
 
 .mf-section-two-title-center {
@@ -286,6 +218,7 @@ body {
   background-color: white;
   align-content: center;
   padding-bottom: 4rem;
+  font-weight: 900;
 }
 
 .mf-section-2-grid {
@@ -306,13 +239,12 @@ body {
 }
 
 .mf-card-image {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .mf-card-title {
   font-weight: bold;
   padding-bottom: 0.5rem;
-  padding-top: 1rem;
   font-family: 'Noto Sans JP';
 }
 
@@ -320,17 +252,15 @@ body {
   font-family: 'Open Sans';
   font-size: 1em;
   color: #525252;
-}
-
-.mf-graphic-row {
-  background-color: #efefef;
-  color: #333333;
+  padding: .5em;
 }
 
 .mf-pic-description {
   font-size: 2.5em;
   font-family: 'Noto Sans JP';
   padding-bottom: .7em;
+  color: #333333;
+  font-weight: 900;
 }
 
 .mf-pre-footer {
@@ -352,10 +282,8 @@ body {
 .mf-footer {
   font-family: Open Sans;
   background: #0c1436;
-  padding-top: 3em;
-  padding-bottom: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: .3em;
 }
 
 .mf-footer-logo {
@@ -390,7 +318,147 @@ body {
 .mf-ex-docs {
   font-family: 'Open Sans';
   padding-right: 1em;
+  margin-bottom: 0;
+
 }
 
 
+/* BACKGROUND ANIMATION*/
 
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area {
+  background: #6f87f6;  
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+  width: 100%;
+  height:100%;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  border-radius: .3em;  
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: -5s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 15%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: -12s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: -8s;
+}
+
+.circles li:nth-child(6){
+    left: 45%;
+    width: 110px;
+    height: 110px;
+    animation-delay: -10s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: -8s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0.3;
+    }
+}
+
+/* END OF BACKGROUND ANIMATION*/
