@@ -228,6 +228,11 @@ body {
   padding-bottom: 8em;
 }
 
+.mf-consistent-performance { 
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .mf-box {
   border: .2em;
   border-color: gainsboro;
