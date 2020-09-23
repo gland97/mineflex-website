@@ -91,7 +91,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
             <h5 class="text-center" style="margin-bottom: 0; font-weight: 900;">Join the FREE Beta</h5>
           </div>
           <div style="background-color: white; border-bottom-left-radius: 0.3em; border-bottom-right-radius: 0.3rem;">
-            <form style="padding: 1.5em;">
+            <div class="p-4">
               <div class="form-label-group">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
               </div>
@@ -102,20 +102,21 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
 
               <button class="btn btn-primary btn-block text-uppercase mf-btn-join-beta" type="submit">Sign Up</button>
               <button id="mf-beta-signup-success" class="btn btn-primary btn-block text-uppercase mf-btn-join-beta" type="submit" style="display: none;">Welcome! Check your email for a beta code!</button>
-              <div id="mf-beta-signup-success" class="row justify-content-center" style="display: none;">
-                <div class="col-12 d-flex align-items-center justify-content-center">
-                  <p class="text-center" style="font-family:'Open Sans'; color: #333333; padding: .5rem; font-size: 1rem; margin-bottom:0;">Welcome! Check your email for a beta code!</p>
+              </div>
+              <hr class="my-2">
+              <div id="mf-beta-signup-error" class="row justify-content-center mx-0" style="padding-left: 1.5rem; padding-right: 1.5rem; display: none;">
+                <div class="alert alert-danger col-12 d-flex align-items-center justify-content-center text-center" role="alert" style="font-family:'Noto Sans JP'; font-size: 1rem; margin-bottom:0;">
+                  Error
                 </div>
               </div>
-              <hr class="my-4">
-              <div class="mf-checkbox text-center">
-                <p style="margin-bottom:0;">Already joined?
+              <div class="mf-checkbox text-center p-2">
+                <p style="margin-top: .3rem;">Already joined?
                   <a href="https://mineflex.io/admin/login">
                     <u>Login.</u>
                   </a>
                 </p>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
