@@ -68,7 +68,7 @@ body {
 .mf-login-header:hover, .mf-login-header:focus {
   background-color: #6f87f6;
   border-color: white;
-  color: #333333;
+  color: white;
   box-shadow: none;
   font-family: 'Noto Sans JP';
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
